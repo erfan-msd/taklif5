@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+<head>
+	<meta charset="utf-8">
+	<title>آشنایی با رشته و مهارت های دانشجویی</title>
+	<link rel ="stylesheet" href="style.css">
+	<link rel ="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<meta name="viewport" content="width=device-width,intial-scale=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+</head>
+<body>
+	<section id="banner">
+		<img src="images/logo.jpg" class="logo">
+		<div class="banner-text">
+			<h1>ایستگاه دانشجویی</h1>
+			<p>آشنایی با رشته و مهارت های دانشجویی</p>
+				<div class="banner-btn">
+					<a href="http://www.iust.ac.ir/"><span></span>دانشگاه علم و صنعت ایران</a>
+					<a href="ashnaei.html"><span></span>اشنایی بیشتر</a>
+				</div>
+		</div>
+		
+	</section>
+	<div id="sideNav">
+		<nav>
+			<ul>
+				<li><a href="home.html">صفحه اصلی</a></li>
+				<li><a href="amoozeshi.html">آموزشی</a></li>
+				<li><a href="angizeshi.html">انگیزشی</a></li>
+				<li><a href="tafrihi.html">تفریحی</a></li>
+				<li><a href="daneshgah.html">دانشگاه</a></li>
+				<li><a href="ashnaei.html">آشنایی با ما</a></li>
+
+			</ul>
+		</nav>
+		
+	</div>
+
+	<section id="features">
+		<div class="title-text">
+			<p>امکانات</p>
+			<h1>چرا باید مارا انتخاب کنید</h1>
+		</div>
+		<div class="feature-box">
+			<div class="features">
+				<h1>نظرسنجی های انجام شده</h1>
+				<div class="features-desc">
+					<div class="feature-icon">
+						<i class="fa fa-commenting" ></i>
+					</div>
+					<div class="feature-text">
+						<p>
+							ما از دانشجویان سخت کوش و بهترین پزشکان در دانشگاه های برتر ایران سوالاتی در مورد ویژگی های یک دانشجو پرسیده ایم.
+						</p>
+					</div>
+				</div>
+				<h1>تحقیقات بسیار</h1>
+				<div class="features-desc">
+					<div class="feature-icon">
+						<i class="fa fa-book" ></i>
+					</div>
+					<div class="feature-text">
+						<p>
+							ما مطالعات زیادی در مورد تأثیرات دانشگاه و رشته بر روی دانشجو انجام داده ایم.
+						</p>
+					</div>
+				</div>
+				<h1>مجانی</h1>
+				<div class="features-desc">
+					<div class="feature-icon">
+						<i class="fa fa-usd" ></i>
+					</div>
+					<div class="feature-text">
+						<p>
+							ما اطلاعات و مطالب زیادی را به صورت تخصصی و رایگان در اختیار شما قرار می دهیم.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="features-img">
+				<img src="images/why1.jpg">
+			</div>
+		</div>
+	</section>
+		
+	<section id="service">
+		<div class="title-text">
+			<p>سرویس ها</p>
+			<h1>آنچه مابرای شما داریم</h1>
+			<div class="service-box">
+				<div class="single-service">
+					<img src="images/edu1.png">
+					<div class="overlay"></div>
+					<div class="service-desc">
+						<h3>آموزشی</h3>
+						<hr>
+						<p> "آموزش و پرورش قدرتمندترین سلاحی است که می توانید برای تغییر جهان استفاده کنید."— BB King</p>
+					</div>
+				</div>
+				<div class="single-service">
+					<img src="images/uni.jpg">
+					<div class="overlay"></div>
+					<div class="service-desc">
+						<h3>دانشگاه</h3>
+						<hr>
+						<p>"آموزش بالاترین شکل درک است." –Aristotle</p>
+						</div>
+				</div>
+				<div class="single-service">
+					<img src="images/en.jpg">
+					<div class="overlay"></div>
+					<div class="service-desc">
+						<h3>تفریحی</h3>
+						<hr>
+						<p>"قبل از ماشین آلات تنها نوع سرگرمی مردم واقعاً روابط بود."–Douglas Coupland</p>
+						</div>
+				</div>
+				<div class="single-service">
+					<div class="overlay"></div>
+					<img src="images/sty.jpg">
+					<div class="service-desc">
+						<h3>انگیزشی</h3>
+						<hr>
+						<p>"شخصی که هرگز اشتباه نکرده هرگز مورد جدیدی را امتحان نکرده است."— Albert Einstein</p>
+						</div>
+				</div>
+			</div>
+		</div>
+
+	</section >
+
+	<div id="menuBtn">
+		<img src="images/manu1.jpg" id="menu">
+	</div>
+
+	<script>
+		var menuBtn = document.getElementById("menuBtn")
+		var sideNav = document.getElementById("sideNav")
+		var menu = document.getElementById("menu")
+
+		menuBtn.onclick=function(){
+			if (sideNav.style.right == "-250px"){
+				sideNav.style.right = "0";
+				menu.src="images/close2.png"
+			}
+			else{
+				sideNav.style.right="-250px";
+				menu.src="images/manu1.jpg"
+
+			}
+		}
+	</script>
+
+</body>
+</html>
